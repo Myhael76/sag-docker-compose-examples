@@ -45,9 +45,15 @@ The volumes `um-1011-example1_license` and `um-1011-example1_config` now contain
 
 **Q: How can you know what folders to mount?**
 
-A: execute `docker image inspect store/softwareag/universalmessaging-server:10.11` and look at the volumes section:
+A: execute 
 
-```bash
+```sh
+docker image inspect store/softwareag/universalmessaging-server:10.11
+```
+
+and look at the volumes section:
+
+```sh
 #...
   "Volumes": {
       "/opt/softwareag/UniversalMessaging/server/umserver/data": {},

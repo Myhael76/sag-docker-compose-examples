@@ -10,7 +10,7 @@ volumes:
       type: tmpfs
       device: tmpfs
 services:
-  img-gen:
+  um-server:
     image: store/softwareag/universalmessaging-server:10.11
     container_name: um-server
     hostname: um-server
